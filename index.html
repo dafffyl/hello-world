@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modèle 3D du Système Solaire</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Modèle 3D dynamique du système solaire</h1>
+      <p>
+        Explorez les planètes, leurs lunes et visualisez leurs orbites. Utilisez les
+        contrôles ci-dessous pour ajuster l'affichage.
+      </p>
+    </header>
+    <main class="app-main">
+      <section class="controls">
+        <label class="control-item">
+          <span>Couleur du fond diffus :</span>
+          <input type="color" id="backgroundColor" value="#000011" />
+        </label>
+        <label class="control-item toggle">
+          <input type="checkbox" id="orbitToggle" checked />
+          <span>Afficher les orbites</span>
+        </label>
+      </section>
+      <section class="viewer">
+        <div id="sceneContainer" class="scene-container"></div>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <p>
+        Textures et données inspirées des missions de la NASA et de l'ESA. Ce modèle est une
+        approximation artistique destinée à l'exploration éducative.
+      </p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
